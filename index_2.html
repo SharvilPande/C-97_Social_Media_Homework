@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kwitter Rooms</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="background-color: rgb( 54, 138, 216);">
+<div class="container">
+<button class="glyphicon glyphicon-log-out btn btn-danger" id="logout" onclick="logout()">Logout</button>
+<center>
+<h1 id="app_name" class="colour_white">Kwitter
+<sup><img src="m2.png" id="img_sup">
+</sup>
+</h1>
+<h3 style="color: black; background-color: rgb(153, 211, 153); width: 70%;" id="welcome"></h3>
+<div class="login_div_2">
+<div class="form-group">
+<h3 style="text-align: left;"><b>#Creating</b></h3>
+<br><br>
+<span><i class="material-icons" id="user_2">house</i><input type="text" placeholder="#New Room Name" class="form-control" id="new_room"></span>
+</div>
+<br><br>
+<button onclick="addRoom()" class="btn btn-success">#Add Room</button>
+</div>
+<div class="login_div_2">
+<h3 style="text-align: left;"><b>#Rooms</b></h3>
+<br><br>
+<div id="output"></div>
+</div>
+<script src="main_2.js"></script>
+</body>
+</html>
+
